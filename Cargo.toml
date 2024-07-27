@@ -1,0 +1,3 @@
+[workspace]
+members = [ "application-interface","core"]
+resolver = "2"
