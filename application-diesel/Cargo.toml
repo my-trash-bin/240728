@@ -1,0 +1,13 @@
+[package]
+name = "application-diesel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+application-interface = { version = "0.1.0", path = "../application-interface" }
+chrono = "0.4.38"
+futures = "0.3.30"
+uuid = { version = "1.10.0", features = ["v4", "fast-rng", "macro-diagnostics"] }
+diesel = { version = "2.2.2", features = ["chrono", "sqlite", "uuid", "r2d2"], default-features = false }
+serde = { version = "1.0.204", features = ["derive"] }
+diesel_migrations = { version = "2.2.0", features = ["sqlite"] }

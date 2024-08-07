@@ -1,0 +1,11 @@
+[package]
+name = "application-inmemory"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+application-interface = { version = "0.1.0", path = "../application-interface" }
+chrono = "0.4.38"
+diesel = { version = "2.2.2", features = ["sqlite", "uuid"], default-features = false }
+futures = "0.3.30"
+uuid = { version = "1.10.0", features = ["v4", "fast-rng", "macro-diagnostics"] }

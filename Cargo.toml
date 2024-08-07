@@ -1,3 +1,7 @@
 [workspace]
-members = [ "application-interface","core"]
+members = [
+  "core",
+  "application-interface",
+  "application-inmemory", "application-diesel",
+]
 resolver = "2"
